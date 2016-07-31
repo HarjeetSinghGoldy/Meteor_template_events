@@ -92,7 +92,7 @@
   <p>{{name}}</p>
   {{#if image}}
   <img src="{{image.thumb}}"> {{/if}} {{#if skills}}
-  <p>Primary Skill: {{skills.[0]}}</p>
+  <p>Primary Skill: {{skills.[1]}}</p>
   {{#if hasMoreSkills skills}}
   <a href="/skills">see more…</a> {{/if}} {{/if}}
 </template>
@@ -100,8 +100,8 @@
 <template name="globalHelpers">
   <h3>globalHelpers template</h3>
   {{#if gt skills 1}}
-  <a href="/skills">see more…</a> {{/if}} {{#if gt images 4}}
-  <a href="/images">see more…</a> {{/if}}
+  <a href="/skills">see more Skills…</a> {{/if}} {{#if gt images 1}}
+  <a href="/images">see more Images…</a> {{/if}}
 </template>
 
 <template name="coderOfTheMonth">

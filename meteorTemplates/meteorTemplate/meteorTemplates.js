@@ -18,7 +18,7 @@ if (Meteor.isClient) {
   });
   Template.ifBlock.helpers({
     image: function () {
-      //return false;
+      // return false;
       return "cookies.jpg";
     }
   });
